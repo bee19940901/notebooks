@@ -62,7 +62,6 @@ void cut_fastq(const char *infile, const char *outfile, int cutoff) {
 
     char buffer[MAX_LINE];
     int line_number = 1;
-
     // 逐行读取并处理
     while (fgets(buffer, MAX_LINE, infile_handle)) {
         buffer[strcspn(buffer, "\n")] = '\0';  // 去掉换行符
