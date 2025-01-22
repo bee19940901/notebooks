@@ -12,6 +12,7 @@
 #include "test9.h"
 #include "test10.h"
 #include "test11.h"
+#include "test12.h"
 
 // 主函数
 int main(){
@@ -48,6 +49,9 @@ int main(){
 
     printf("\n%s TEST11 %s\n", left_string, right_string);
     test11();
+
+    printf("\n%s TEST12 %s\n", left_string, right_string);
+    test12();
 
     return 0;
 }
