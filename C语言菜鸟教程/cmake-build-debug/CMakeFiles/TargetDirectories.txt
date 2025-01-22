@@ -1,3 +1,0 @@
-E:/personal_projects/notebooks/C语言菜鸟教程/cmake-build-debug/CMakeFiles/C.dir
-E:/personal_projects/notebooks/C语言菜鸟教程/cmake-build-debug/CMakeFiles/edit_cache.dir
-E:/personal_projects/notebooks/C语言菜鸟教程/cmake-build-debug/CMakeFiles/rebuild_cache.dir
