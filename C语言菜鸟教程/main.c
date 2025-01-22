@@ -13,6 +13,9 @@
 #include "test10.h"
 #include "test11.h"
 #include "test12.h"
+#include "test13.h"
+#include "strsplit.h"
+#include "cut_fastq.h"
 
 // 主函数
 int main(){
@@ -52,6 +55,26 @@ int main(){
 
     printf("\n%s TEST12 %s\n", left_string, right_string);
     test12();
+
+    printf("\n%s TEST13 %s\n", left_string, right_string);
+    test13();
+
+    const char* str = "C\tlanguage\tsplit\tfunction\texample";
+    int count = 0;
+
+    // 调用split函数
+    char** result = strsplit(str, "\t", &count);
+
+    // 打印分割结果
+    for (int i = 0; i < count; i++) {
+        printf("result[%d]: %s\n", i, result[i]);
+    }
+
+    // 释放内存
+    free_split_result(result, count);
+
+    printf("\n%s TEST14 %s\n", left_string, right_string);
+    cut_fastq("../test_150bp.fastq", "../outputs/75bp/test_75bp.fastq", 75);
 
     return 0;
 }
