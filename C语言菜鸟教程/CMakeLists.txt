@@ -38,4 +38,4 @@ add_executable(C
         cut_fastq.h
         test13.c
         test13.h
-        utils.h test16.c)
+        utils.h test16.c test17.c)

@@ -6,5 +6,6 @@
 #define C_TESTS_H
 
 void test15();
+void test17();
 
 #endif //C_TESTS_H

@@ -88,5 +88,11 @@ int main(){
     people.greet("Bee");
     people.eat();
     people.run();
+
+    printf("\n%s TEST17 %s\n", left_string, right_string);
+    test17();
+
     return 0;
+
+
 }
