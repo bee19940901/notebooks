@@ -24,7 +24,7 @@ static void mkdirs(const char *outdir) {
         free(parent_dir);
 
         // 创建目标目录
-        if (mkdir(outdir, 0700) != 0) {
+        if (mkdir(outdir) != 0) {
             fprintf(stderr, "Error creating directory %s\n", outdir);
             exit(1);
         }

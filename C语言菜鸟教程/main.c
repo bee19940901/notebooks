@@ -2,9 +2,10 @@
 // Created by Administrator on 2025/1/16.
 //
 
-#include "stdio.h"
+#include <stdio.h>
+#include <string.h>
+
 #include "chapter4.h"
-#include "string.h"
 #include "chapter5.h"
 #include "chapter6.h"
 #include "chapter7.h"
@@ -16,6 +17,8 @@
 #include "test13.h"
 #include "strsplit.h"
 #include "cut_fastq.h"
+#include "tests.h"
+#include "utils.h"
 
 // 主函数
 int main(){
@@ -76,5 +79,14 @@ int main(){
     printf("\n%s TEST14 %s\n", left_string, right_string);
     cut_fastq("../test_150bp.fastq", "../outputs/75bp/test_75bp.fastq", 75);
 
+    printf("\n%s TEST15 %s\n", left_string, right_string);
+    test15();
+
+
+    printf("\n%s TEST16 %s\n", left_string, right_string);
+    People people = get_people();
+    people.greet("Bee");
+    people.eat();
+    people.run();
     return 0;
 }
