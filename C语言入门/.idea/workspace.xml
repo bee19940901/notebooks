@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="CMakePresetLoader"><![CDATA[{
+  "useNewFormat": true
+}]]></component>
+  <component name="CMakeReloadState">
+    <option name="reloaded" value="true" />
+  </component>
+  <component name="CMakeRunConfigurationManager">
+    <generated />
+  </component>
+  <component name="CMakeSettings">
+    <configurations>
+      <configuration PROFILE_NAME="Debug" ENABLED="true" CONFIG_NAME="Debug" />
+    </configurations>
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9a2f1b7d-201d-47a6-81c5-8aed6bfa298e" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/beginning-c-from-beginner-to-pro-7.pdf" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/CMakeLists.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/add_two_numbers.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/add_two_numbers.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/chapter1.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/chapter2.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/chapter3.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/chapter4.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/chapter4.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/chapter5.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/chapter5.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/chapter6.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/chapter6.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/chapter7.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/chapter7.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/chapter8.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/chapter8.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/cut_fastq.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/cut_fastq.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/main.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/outputs/75bp/test_75bp.fastq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/strsplit.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/strsplit.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/test10.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/test10.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/test11.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/test11.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/test12.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/test12.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/test13.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/test13.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/test15.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/test16.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/test17.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/test9.c" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/test9.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/test_150bp.fastq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/test_50bp.fastq" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/tests.h" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../C语言菜鸟教程/utils.h" beforeDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ClangdSettings">
+    <option name="formatViaClangd" value="false" />
+  </component>
+  <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="ProjectApplicationVersion">
+    <option name="ide" value="CLion" />
+    <option name="majorVersion" value="2023" />
+    <option name="minorVersion" value="1.3" />
+  </component>
+  <component name="ProjectId" id="2sek9UcTLBOVGuNr2IkT7XB7Ai0" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "ASKED_ADD_EXTERNAL_FILES": "true",
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "RunOnceActivity.cidr.known.project.marker": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "cf.first.check.clang-format": "false",
+    "cidr.known.project.marker": "true",
+    "ignore.virus.scanning.warn.message": "true",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="RunManager">
+    <configuration default="true" type="CLionExternalRunConfiguration" factoryName="Application" REDIRECT_INPUT="false" ELEVATE="false" USE_EXTERNAL_CONSOLE="false" PASS_PARENT_ENVS_2="true">
+      <method v="2">
+        <option name="CLION.EXTERNAL.BUILD" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9a2f1b7d-201d-47a6-81c5-8aed6bfa298e" name="Changes" comment="" />
+      <created>1738823277025</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1738823277025</updated>
+      <workItem from="1738823279561" duration="1252000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="VCPKGProject">
+    <isAutomaticEditVcpkgJson value="false" />
+    <isAutomaticCheckingOnLaunch value="false" />
+    <isAutomaticFoundErrors value="true" />
+    <isAutomaticFoundErrors value="true" />
+  </component>
+</project>
