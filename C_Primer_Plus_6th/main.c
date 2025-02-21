@@ -41,7 +41,27 @@ int main(void )
 //    chapter5_test6();
 //    chapter5_test7();
 //    chapter5_test8();
-    chapter5_test9();
+//    chapter5_test9();
+//    chapter6_test1();
+//    chapter6_test2();
+//    chapter6_test3();
+//    chapter6_test4();
+//    chapter6_test5();
+//    chapter6_test6();
+//    chapter6_test7();
+//    chapter6_test8();
+//    chapter6_test9();
+//    chapter6_test10();
+//    chapter6_test11();
+//    chapter6_test12();
+//    chapter6_test13();
+//    chapter6_test13();
+//    chapter6_test14();
+//    chapter6_test15();
+//    chapter6_test16();
+//    chapter6_test17();
+    chapter6_test18();
+
     return 0;
 
 }
