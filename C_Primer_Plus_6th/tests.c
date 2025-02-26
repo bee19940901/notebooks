@@ -349,3 +349,160 @@ void chapter6_test18(void ){
         printf("Dr has %d friends at week %d.\n", num, i);
     }
 }
+
+void chapter7_test1(void ){
+    char ch = 0;
+    int space_n = 0;
+    int enter_n = 0;
+    int char_n = 0;
+    printf("Enter:\n");
+    while ((ch = getchar()) != '#'){
+        switch (ch) {
+            case ' ':
+                space_n++;
+                break;
+            case '\n':
+                enter_n++;
+                break;
+            default:
+                char_n++;
+        }
+    }
+    printf("%d %d %d\n", space_n, enter_n, char_n);
+}
+
+void chapter7_test2(void ){
+    char ch = 0;
+    printf("Enter: \n");
+    int i = 0;
+    while ((ch = getchar()) != '#'){
+        i ++;
+        if (i % 8 == 0){
+            printf("%c-%d\n", ch, ch);
+        } else {
+            printf("%c-%d ", ch, ch);
+        }
+    }
+}
+
+void chapter7_test3(void ){
+    int num = 0;
+    int odd_sum = 0;
+    int even_sum = 0;
+    int odd_num = 0;
+    int even_num = 0;
+    double even_mean = 0;
+    double odd_mean = 0;
+    printf("Enter:\n");
+    while (scanf("%d", &num) == 1){
+        if(num == 0){
+            even_mean = (double )(even_sum) / even_num;
+            odd_mean = (double )(odd_sum) / odd_num;
+            printf("%d %.2lf %d %.2lf\n", even_num, even_mean, odd_num, odd_mean);
+            printf("Exit...");
+            break;
+        }
+        if(num % 2 ==0 ){
+            even_sum += num;
+            even_num++;
+        } else{
+            odd_sum += num;
+            odd_num ++;
+        }
+    }
+}
+
+void chapter7_test4(){
+    int cha = 0;
+    int num = 0;
+    printf("Input: ");
+    while ((cha = getchar()) != '#'){
+        if(cha == '.'){
+            putchar('!');
+            num ++;
+        } else if (cha == '!'){
+            putchar('!');
+            putchar('!');
+            num ++;
+        } else{
+            putchar(cha);
+        }
+    }
+    printf("\n%d\n", num);
+}
+
+void chapter7_test5(void ){
+    int cha = 0;
+    int num = 0;
+    printf("Input: ");
+    while ((cha = getchar()) != '#'){
+        switch (cha) {
+            case '!':
+                putchar('!');
+                putchar('!');
+                num++;
+                break;
+            case '.':
+                putchar('!');
+                num++;
+                break;
+            default:
+                putchar(cha);
+                break;
+        }
+    }
+    printf("\n%d\n", num);
+}
+
+void chapter7_test6(void) {
+    char cha;
+    int sum = 0;
+    char str[1024] = {0};
+    printf("Input: ");
+    int i = 0;
+
+    // 限制读取长度，避免缓冲区溢出
+    while (i < 1023 && (cha = getchar()) != '#') {
+        str[i++] = cha;
+    }
+    str[i] = '\0'; // 正确终止字符串
+
+    if (i <= 1) { // 直接使用i判断长度，无需strlen
+        printf("0\n");
+    } else {
+        for (int j = 1; j < i; j++) { // 使用i代替strlen(str)
+            if (str[j-1] == 'e' && str[j] == 'i') {
+                sum++;
+            }
+        }
+        printf("%d\n", sum);
+    }
+}
+
+
+void chapter7_test7(void) {
+    double hours = 0;
+    double tax = 0;
+    double salary = 0;
+    printf("Enter: ");
+
+    while (1) {
+        if (scanf("%lf", &hours) != 1) { // 仅读取一次hours
+            while (getchar() != '\n'); // 清除缓冲区无效输入
+            printf("Exit...\n");
+            break;
+        }
+
+        if (hours <= 40) {
+            salary = hours * 10.0;
+            tax = (salary <= 300) ? salary * 0.15 : 300 * 0.15 + (salary - 300) * 0.2;
+        } else {
+            salary = 30 * 10 + (hours - 30) * 1.5 * 10.0;
+            tax = (salary <= 450) ?
+                  (300 * 0.15 + (salary - 300) * 0.2) :
+                  (300 * 0.15 + 150 * 0.2 + (salary - 450) * 0.25);
+        }
+
+        printf("Salary: %.2lf, Tax: %.2lf, Rest: %.2lf\n", salary, tax, salary - tax);
+    }
+}

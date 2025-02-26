@@ -60,7 +60,15 @@ int main(void )
 //    chapter6_test15();
 //    chapter6_test16();
 //    chapter6_test17();
-    chapter6_test18();
+//    chapter6_test18();
+//    chapter7_test1();
+//    chapter7_test2();
+//    chapter7_test3();
+//    chapter7_test4();
+//    chapter7_test5();
+//    chapter7_test6();
+//    chapter7_test7();
+    chapter7_test8();
 
     return 0;
 
