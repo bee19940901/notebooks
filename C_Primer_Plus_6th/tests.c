@@ -506,3 +506,80 @@ void chapter7_test7(void) {
         printf("Salary: %.2lf, Tax: %.2lf, Rest: %.2lf\n", salary, tax, salary - tax);
     }
 }
+
+double calculate(double hours, double per){
+    double salary = 0;
+    double tax = 0;
+    if (hours <= 40) {
+        salary = hours * 10.0;
+        tax = (salary <= 300) ? salary * 0.15 : 300 * 0.15 + (salary - 300) * 0.2;
+    } else {
+        salary = 30 * 10 + (hours - 30) * 1.5 * 10.0;
+        tax = (salary <= 450) ?
+              (300 * 0.15 + (salary - 300) * 0.2) :
+              (300 * 0.15 + 150 * 0.2 + (salary - 450) * 0.25);
+    }
+    return (salary - tax);
+}
+
+void chapter7_test8(void ){
+    int choice = 0;
+    double income = 0;
+    double hours = 0;
+    printf("*****************************************************************\n"
+           "Enter the number corresponding to the desired pay rate or action:\n"
+           "1) $8.75/hr                        2) $9.33/hr\n"
+           "3) $10.00/hr                       4) $11.20/hr\n"
+           "5) quit\n"
+           "*****************************************************************\n"
+           );
+    if(scanf("%d", &choice) != 1){
+        printf("Please enter correct integer!\n");
+        exit(1);
+    }
+    printf("Please enter your hours:\n");
+    if(scanf("%lf", &hours) !=1 ){
+        printf("Please enter correct hours.\nProgram exit...\n");
+        exit(1);
+    }
+    switch (choice) {
+        case 1:
+            income = calculate(hours, 8.75);
+            break;
+        case 2:
+            income = calculate(hours, 9.33);
+            break;
+        case 3:
+            income = calculate(hours, 10.00);
+            break;
+        case 4:
+            income= calculate(hours, 11.20);
+            break;
+        default:
+            printf("Please select 1, 2, 3 or 4 potion\n");
+            exit(1);
+    }
+    printf("Your final income is %lf\n", income);
+}
+
+void chapter7_test9(void ){
+    int my_num = 42;
+    int your_num = 0;
+    printf("Please guess a number: ");
+    while (1){
+        if(scanf("%d", &your_num) != 1){
+            printf("Please enter a inter!");
+            return;
+        } else{
+            if(your_num > my_num){
+                printf("Smaller!\n");
+            } else if (your_num < my_num){
+                printf("Bigger!\n");
+            } else{
+                printf("You did it!\n");
+                return;
+            }
+        }
+    }
+
+}

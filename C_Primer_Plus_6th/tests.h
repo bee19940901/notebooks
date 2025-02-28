@@ -44,6 +44,7 @@ void chapter7_test5(void );
 void chapter7_test6(void );
 void chapter7_test7(void );
 void chapter7_test8(void );
-
+double calculate(double hours, double per);
+void chapter7_test9(void );
 
 #endif //C_TESTS_H

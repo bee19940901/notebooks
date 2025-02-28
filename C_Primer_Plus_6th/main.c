@@ -3,6 +3,8 @@
 //#include "chapter5.h"
 #include "tests.h"
 
+#include "chapter8.h"
+
 
 int main(void )
 {
@@ -68,7 +70,11 @@ int main(void )
 //    chapter7_test5();
 //    chapter7_test6();
 //    chapter7_test7();
-    chapter7_test8();
+//    chapter7_test8();
+//    chapter7_test9();
+//    test_8_1();
+//    list_8_2();
+    list_8_3();
 
     return 0;
 
