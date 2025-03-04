@@ -4,7 +4,7 @@
 #include "tests.h"
 
 #include "chapter8.h"
-
+#include "chapter9.h"
 
 int main(void )
 {
@@ -74,7 +74,10 @@ int main(void )
 //    chapter7_test9();
 //    test_8_1();
 //    list_8_2();
-    list_8_3();
+//    list_8_3();
+//    list_9_1();
+//    list_9_2();
+    list_9_3();
 
     return 0;
 
