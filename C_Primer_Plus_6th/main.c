@@ -77,7 +77,12 @@ int main(void )
 //    list_8_3();
 //    list_9_1();
 //    list_9_2();
-    list_9_3();
+//    list_9_3();
+//    list_9_6();
+//    list_9_8();
+//    test_9_1();
+//    test_9_2();
+    test_9_4();
 
     return 0;
 
