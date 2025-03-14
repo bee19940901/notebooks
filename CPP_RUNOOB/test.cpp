@@ -141,3 +141,57 @@ void func10(){
         }
     }
 }
+
+// setw函数(默认右对齐)
+void func11(){
+    double nums[10] = {0};
+    for(int i = 0; i < 10; i++){
+        nums[i] = pow(2.0, (double )i);
+    }
+    cout << setw(8) << "Index" << setw(8) << "Value" << endl;
+    for(int i = 0; i < 10; i ++){
+        cout << setw(8) << i << setw(8) << nums[i] << endl;
+    }
+}
+
+// 使用setw函数实现左对齐
+void func12(){
+    double nums[10] = {0};
+    for(int i = 0; i < 10; i++){
+        nums[i] = pow(2.0, (double )i);
+    }
+    cout << left << setw(8) << "Index" << left << setw(8) << "Value" << endl;
+    for(int i = 0; i < 10; i ++){
+        cout << left << setw(8) << i << left <<setw(8) << nums[i] << endl;
+    }
+}
+
+// 多维数组
+void func13(){
+    int arr[3][3] = {{0, 1,2}, {3, 4, 5}, {6, 7,8}};
+    for(int i =0; i < 3; i++){
+        for (int j = 0; j < 3; j++){
+            cout << "arr[" << i << "]" << "[" << j << "]=" << arr[i][j] << endl;
+        }
+    }
+}
+
+// 数组名是指向数组中第一个元素的常量指针
+void func14(){
+    int arr[5] = {2, 4, 5 , 6 , 9};
+    int *p;
+    p = arr;
+    for(auto i : arr){
+        cout << i << endl;
+    }
+    cout << "*****************************************" << endl;
+    for (int i = 0; i < 5; i++){
+        cout << "arr[" << i << "]=" << *(p+i) << endl;
+    }
+    cout << "*****************************************" << endl;
+    for (int i = 0; i < 5; i++){
+        cout << "arr[" << i << "]=" << *(p++) << endl;
+    }
+}
+
+// C++ 传递数组给函数
