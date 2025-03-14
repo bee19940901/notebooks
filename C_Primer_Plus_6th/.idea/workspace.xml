@@ -22,12 +22,6 @@
   <component name="ChangeListManager">
     <list default="true" id="9f9b1c3a-da27-453a-9071-455bfe05216e" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter9.c" beforeDir="false" afterPath="$PROJECT_DIR$/chapter9.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chapter9.h" beforeDir="false" afterPath="$PROJECT_DIR$/chapter9.h" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_deps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/.ninja_log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/C.exe" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/C.exe" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.c" beforeDir="false" afterPath="$PROJECT_DIR$/main.c" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -88,7 +82,9 @@
       <updated>1740729410616</updated>
       <workItem from="1740729412444" duration="5684000" />
       <workItem from="1741071923043" duration="3765000" />
-      <workItem from="1741134755625" duration="5331000" />
+      <workItem from="1741134755625" duration="5368000" />
+      <workItem from="1741769362156" duration="40000" />
+      <workItem from="1741918430692" duration="159000" />
     </task>
     <servers />
   </component>
