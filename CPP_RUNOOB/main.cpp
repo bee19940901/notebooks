@@ -1,10 +1,18 @@
 #include <iostream>
-#include "practices.hpp"
-#include "instance.hpp"
-#include "Instance9.hpp"
-#include "test.hpp"
+#include "runoob.hpp"
 
 int main() {
+
+    func22();
+//    func21();
+//    func20();
+//    func19();
+//    func18();
+//    func17();
+//    func16();
+//    func15();
+//    func14();
+//    func13();
 //    test1();
 //    instance1();
 //    instance2();
@@ -33,8 +41,6 @@ int main() {
 //    func10();
 //    func11();
 //    func12();
-    func14();
-//    func13();
 
 
     return 0;
