@@ -71,3 +71,13 @@ void instance7(){
     int area = LENGTH * WIDTH;
     cout << "AREA = " << area << endl;
 }
+
+// C++ 修饰符类型
+// 有符号整数和无符号整数之间的差别
+void instance8(){
+    unsigned short int i; // 0 ~ 65535
+    short int j; // -32768 ~ 32767, 溢出了
+    i = 50000;
+    j = 50000;
+    cout << "i=" << i << " j=" << j << endl;
+}

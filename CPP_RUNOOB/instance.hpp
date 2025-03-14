@@ -15,5 +15,6 @@ void instance4();
 void instance5();
 void instance6();
 void instance7();
+void instance8();
 
 #endif //CPP_RUNOOB_INSTANCE_HPP

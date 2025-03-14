@@ -67,6 +67,18 @@ build CMakeFiles/CPP_RUNOOB.dir/instance.cpp.obj: CXX_COMPILER__CPP_RUNOOB_Debug
   OBJECT_DIR = CMakeFiles\CPP_RUNOOB.dir
   OBJECT_FILE_DIR = CMakeFiles\CPP_RUNOOB.dir
 
+build CMakeFiles/CPP_RUNOOB.dir/Instance9.cpp.obj: CXX_COMPILER__CPP_RUNOOB_Debug E$:/Repositories/notebooks/CPP_RUNOOB/Instance9.cpp || cmake_object_order_depends_target_CPP_RUNOOB
+  DEP_FILE = CMakeFiles\CPP_RUNOOB.dir\Instance9.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++11
+  OBJECT_DIR = CMakeFiles\CPP_RUNOOB.dir
+  OBJECT_FILE_DIR = CMakeFiles\CPP_RUNOOB.dir
+
+build CMakeFiles/CPP_RUNOOB.dir/test.cpp.obj: CXX_COMPILER__CPP_RUNOOB_Debug E$:/Repositories/notebooks/CPP_RUNOOB/test.cpp || cmake_object_order_depends_target_CPP_RUNOOB
+  DEP_FILE = CMakeFiles\CPP_RUNOOB.dir\test.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++11
+  OBJECT_DIR = CMakeFiles\CPP_RUNOOB.dir
+  OBJECT_FILE_DIR = CMakeFiles\CPP_RUNOOB.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target CPP_RUNOOB
@@ -75,7 +87,7 @@ build CMakeFiles/CPP_RUNOOB.dir/instance.cpp.obj: CXX_COMPILER__CPP_RUNOOB_Debug
 #############################################
 # Link the executable CPP_RUNOOB.exe
 
-build CPP_RUNOOB.exe: CXX_EXECUTABLE_LINKER__CPP_RUNOOB_Debug CMakeFiles/CPP_RUNOOB.dir/main.cpp.obj CMakeFiles/CPP_RUNOOB.dir/practices.cpp.obj CMakeFiles/CPP_RUNOOB.dir/instance.cpp.obj
+build CPP_RUNOOB.exe: CXX_EXECUTABLE_LINKER__CPP_RUNOOB_Debug CMakeFiles/CPP_RUNOOB.dir/main.cpp.obj CMakeFiles/CPP_RUNOOB.dir/practices.cpp.obj CMakeFiles/CPP_RUNOOB.dir/instance.cpp.obj CMakeFiles/CPP_RUNOOB.dir/Instance9.cpp.obj CMakeFiles/CPP_RUNOOB.dir/test.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\CPP_RUNOOB.dir
