@@ -322,3 +322,60 @@ void func22(){
         cout << str << endl;
     }
 }
+
+// 获取变量的地址
+void func23(){
+    // 整数变量的地址
+    int num = 10;
+    cout << "&i=" << &num << endl;
+    // 查看数组每个元素的地址
+    int nums[5] = {0};
+    for (int i =0; i < 5 ; i++){
+        cout << "&nums[" << i << "]=" << (nums+i) << endl;
+    }
+ }
+
+ // C++ 指针
+ void func24(){
+    // 字符数组
+    char chas[6] = {'H', 'e', 'l', 'l', 'o','\0'};
+    for(int i =0; i < 6; i++){
+        cout << "chas[" << i << "]=" << chas[i] << endl;
+        cout << "&chas["<< i << "] = " << static_cast<void*>(chas + i) << endl;
+    }
+}
+
+// 空指针
+void func25(){
+    int *int_p = nullptr;
+    cout << "int_p=" << int_p << endl;
+    cout << "&int_p=" << &int_p << endl;
+    cout << "int_p == NULL = " << (int_p == nullptr) << endl;
+    // 空指针取反
+    if(!int_p){
+        cout << "True" << endl;
+        cout << "int_p = " << int_p << endl;
+    }
+ }
+
+ // 指针递增
+ void func26(){
+    int nums[5] = {1, 3, 5, 7, 9};
+    int *nums_p = &nums[0];
+    for(int n =0; n < 5; n++){
+        cout << "nums[" << n << "]=" << *nums_p << endl;
+        nums_p++;
+    }
+}
+
+// 指针递减
+void func27(){
+    int nums[5] = {2, 4, 6, 8, 10};
+    int *ptr = &nums[4];
+    for(int n = 4; n >= 0; n--){
+        cout << "nums[" << n << "]=" << *ptr << endl;
+        ptr--;
+    }
+}
+
+// 不同变量之间的指针比较

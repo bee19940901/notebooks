@@ -57,5 +57,10 @@ void func19();
 void func20();
 void func21();
 void func22();
+void func23();
+void func24();
+void func25();
+void func26();
+void func27();
 
 #endif //CPP_RUNOOB_RUNOOB_HPP

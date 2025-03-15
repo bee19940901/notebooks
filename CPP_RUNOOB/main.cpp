@@ -3,7 +3,12 @@
 
 int main() {
 
-    func22();
+    func27();
+//    func26();
+//    func25();
+//    func24();
+//    func23();
+//    func22();
 //    func21();
 //    func20();
 //    func19();
