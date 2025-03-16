@@ -3,7 +3,18 @@
 
 int main() {
 
-    func27();
+    func38();
+//    func37();
+//    func36();
+//    func35();
+//    func34();
+//    func33();
+//    func32();
+//    func31();
+//    func30();
+//    func29();
+//    func28();
+//    func27();
 //    func26();
 //    func25();
 //    func24();

@@ -4,6 +4,61 @@
 
 #include "runoob.hpp"
 
+// 返回一个数组的函数
+const int* myArray(){
+    static int nums[5] = {0};
+    for(int i = 0; i < 5; i++){
+        nums[i] = ::rand();
+    }
+    return nums;
+}
+
+void func38(){
+    const int* p = myArray();
+    for(int i = 0; i < 5; i++){
+        cout << "Address=" << (p+i) << "\t" << "Value=" << *(p +i) << endl;
+    }
+}
+
+
+// 返回指针的函数
+void func37(){
+    int* p = myRandom();
+    cout << "Address=" << p << "\t" << "Value=" << *p << endl;
+}
+
+int* myRandom(){
+    static int i = ::rand();
+    return &i;
+}
+
+// 能接受指针的函数也能接受数组，因为数组就是常量指针
+void func36(){
+    int nums[5] = {1, 3, 5, 7 ,9};
+    int *p = nums;
+    cout << "Mean=" << getMean(p, 5) << endl;
+    cout << "Mean=" << getMean(nums, 5) << endl; // 数组退化为指针
+
+}
+
+double getMean(const int *arr, ::size_t size){
+    double sum = 0;
+    for(::size_t s = 0; s < size; s++){
+        sum += *(arr + s);
+    }
+    return sum / (double )size;
+}
+
+void getSeconds(unsigned long *ul_p){
+    *ul_p = ::time(nullptr);
+}
+
+void func35(){
+    unsigned long sec = 0;
+    getSeconds(&sec);
+    cout << "sec=" << sec << endl;
+}
+
 Class10::Class10(int x, int y) {
     a = x;
     b = y;
@@ -379,3 +434,80 @@ void func27(){
 }
 
 // 不同变量之间的指针比较
+void func28(){
+    int num1 = 10;
+    int num2 = 20;
+    int num3 = 10;
+    int *p1 = &num1;
+    int *p2 = &num2;
+    int *p3 = &num3;
+    int *p4 = &num1;
+    cout << "p1 = p2 " << (p1 == p2) << endl;
+    cout << "p1 = p3 " << (p1 == p3) << endl;
+    cout << "p1 = p4 " << (p1 == p4) << endl;
+}
+
+// 指向同一数组的不同指针
+void func29(){
+    int nums[5] = {1, 3, 5, 7, 9};
+    int *p1 = &nums[0];
+    int *p2 = &nums[2];
+    cout << "p1 = p2 " << (p1 == p2) << endl;
+    cout << "p1 != p2 " << (p1 != p2) << endl;
+    cout << "p1 < p2 " << (p1 < p2) << endl;
+    cout << "p1 > p2 " << (p1 > p2) << endl;
+}
+
+// 数组名可以理解为是一个指向数组第一个元素的常量指针
+void func30(){
+    int nums[5] = {1, 3, 5, 7, 9};
+    for(int n = 0; n < 5; n++){
+//        nums++; // 这是错误的，因为常量指针指向地址不能改变
+        cout << *(nums + n) << endl; // 这是正确的，可以理解为指针加法
+    }
+}
+
+void func31(){
+    int nums[5] = {1, 3, 5, 7, 9};
+    int *p = nums; // 数组退化为一个指针
+    for(int n = 0; n < 5; n++){
+        cout << *p << endl;
+        p++;
+    }
+}
+
+// 指针数组
+// 整数指针数组
+void func32(){
+    int nums[5] = {1, 3, 5, 7, 9};
+    int *pts[5];
+    for (int n = 0; n < 5; n++){
+        pts[n] = &nums[n];
+    }
+    for (auto & pt : pts){
+        cout << "Address=" << pt << "\t" << "Value=" << *pt << endl;
+    }
+}
+
+// 字符串数组
+// 字符串可以理解为一个指向一个字符地址的 "常量指针"
+void func33(){
+    const char *sts[5] = {
+            "Alison",
+            "Bee",
+            "Chanel",
+            "Diamond",
+            "Arabelle"
+    };
+    for(auto & st : sts){
+        cout << st << endl;
+    }
+}
+
+// 指向指针的指针
+void func34(){
+    int num = 42;
+    int *p = &num;
+    int **pp = &p;
+    cout << "num=" << **pp << endl;
+}

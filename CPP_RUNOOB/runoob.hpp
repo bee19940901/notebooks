@@ -12,8 +12,18 @@
 #include "cmath"
 #include "cstring"
 #include "vector"
+#include "ctime"
+#include "cstdlib"
 
 using namespace std;
+void func38();
+const int* myArray();
+void func37();
+int* myRandom();
+void func36();
+double getMean(const int *arr, ::size_t size);
+void func35();
+void getSeconds(unsigned long *ul_p);
 
 class Class10 {
 private:
@@ -62,5 +72,12 @@ void func24();
 void func25();
 void func26();
 void func27();
+void func28();
+void func29();
+void func30();
+void func31();
+void func32();
+void func33();
+void func34();
 
 #endif //CPP_RUNOOB_RUNOOB_HPP
