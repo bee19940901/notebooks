@@ -8,8 +8,8 @@ set(CMAKE_DEPENDS_LANGUAGES
 
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
-  "/Users/bee/workspace/notebooks/CPP_RUNOOB/main.cpp" "CMakeFiles/CPP_RUNOOB.dir/main.cpp.o" "gcc" "CMakeFiles/CPP_RUNOOB.dir/main.cpp.o.d"
-  "/Users/bee/workspace/notebooks/CPP_RUNOOB/runoob.cpp" "CMakeFiles/CPP_RUNOOB.dir/runoob.cpp.o" "gcc" "CMakeFiles/CPP_RUNOOB.dir/runoob.cpp.o.d"
+  "E:/notebooks/CPP_RUNOOB/main.cpp" "CMakeFiles/CPP_RUNOOB.dir/main.cpp.obj" "gcc" "CMakeFiles/CPP_RUNOOB.dir/main.cpp.obj.d"
+  "E:/notebooks/CPP_RUNOOB/runoob.cpp" "CMakeFiles/CPP_RUNOOB.dir/runoob.cpp.obj" "gcc" "CMakeFiles/CPP_RUNOOB.dir/runoob.cpp.obj.d"
   )
 
 # Targets to which this target links.

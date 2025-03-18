@@ -14,8 +14,26 @@
 #include "vector"
 #include "ctime"
 #include "cstdlib"
+#include "locale"
+#include "fstream"
+#include <limits>
 
 using namespace std;
+
+// 一个简单的结构体
+struct Employee{
+    string name;
+    unsigned short age{};
+    double height{};
+    double weight{};
+};
+void func45();
+void func44();
+void func43();
+void func42();
+void func41();
+void func40();
+void func39();
 void func38();
 const int* myArray();
 void func37();

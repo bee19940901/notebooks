@@ -2,7 +2,158 @@
 // Created by Administrator on 2025/3/14.
 //
 
+
 #include "runoob.hpp"
+
+// 结构体引用
+void func45(){
+    Employee bee;
+    bee.name = "Bee";
+    bee.age = 30;
+    bee.height = 173.5;
+    bee.weight = 75.0;
+    Employee &bee_p = bee;
+    cout
+            << "Hello, my name is "
+            << bee_p.name
+            << ", my height is "
+            << fixed
+            << setprecision(2)
+            << bee_p.height
+            << " cm"
+            << ", my weight is "
+            << fixed
+            << setprecision(2)
+            << bee_p.weight
+            << " kg."
+            << endl;
+
+}
+
+
+// 结构体指针
+void func44(){
+    Employee bee;
+    bee.name = "Bee";
+    bee.age = 30;
+    bee.height = 173.5;
+    bee.weight = 75.0;
+    Employee *bee_p = &bee;
+    cout
+            << "Hello, my name is "
+            << bee_p->name
+            << ", my height is "
+            << fixed
+            << setprecision(2)
+            << bee_p->height
+            << " cm"
+            << ", my weight is "
+            << fixed
+            << setprecision(2)
+            << bee_p->weight
+            << " kg."
+            << endl;
+
+}
+
+// 机构体
+void func43(){
+    Employee bee;
+    bee.name = "Bee";
+    bee.age = 30;
+    bee.height = 173.5;
+    bee.weight = 75.0;
+    cout
+    << "Hello, my name is "
+    << bee.name
+    << ", my height is "
+    << fixed
+    << setprecision(2)
+    << bee.height
+    << " cm"
+    << ", my weight is "
+    << fixed
+    << setprecision(2)
+    << bee.weight
+    << " kg."
+    << endl;
+}
+
+
+// 循环输入， 输入错误就退出
+void func42(){
+    int a, b;
+    while (true){
+        cout << "Please enter two numbers: ";
+        if(!(cin >> a >> b)){
+            cin.clear();
+            cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
+            cerr << "Invalided Input Bye!\n";
+            break;
+        }
+        if(a > b){
+            cout << a << " is bigger!\n";
+        } else if( a < b){
+            cout << b << " is bigger!\n";
+        } else {
+            cout << "both " << a << endl;
+        }
+    }
+}
+
+
+// cin 读取字符串
+void func41(){
+    string name;
+    cout << "Enter your name: ";
+    if(!(cin >> name)){
+        cerr << "Invalided Input!\n";
+        return;
+    }
+    cout << "Hello, " << name << "!\n";
+}
+
+// cin
+void func40(){
+    // 基本使用
+    int num;
+    cout << "Enter a number: ";
+    if(!(cin >> num)){
+        cerr << "Invalided Input!\n";
+        return;
+    }
+    cout << "Your number is " << num << endl;
+}
+
+// cout
+void func39(){
+    cout << "Hello, world!\n";
+    // 多个 << 链接
+    int a=10, b=20;
+    cout << "a=" << a << ", b=" << b << endl;
+    // 设置浮点数精度
+    double height = 173.38437476426;
+    cout << fixed << setprecision(2) << height << endl;
+    // 打印布尔值
+    cout << "a > b = " << boolalpha << (a > b) << endl;
+    // 设置固定列宽
+    for(int i = 0; i < 3; i++){
+        for(int j =0; j < 3; j++){
+            cout << left << setw(16) << rand();
+        }
+        cout << endl;
+    }
+    // 重定向到文件
+    ofstream outFile("../outfile.txt");
+    if(!outFile){
+        cerr << "Fail to open file!\n";
+        exit(1);
+    }
+    cout.rdbuf(outFile.rdbuf());
+    cout << "Hello, world!\n";
+    outFile.close();
+
+}
 
 // 返回一个数组的函数
 const int* myArray(){

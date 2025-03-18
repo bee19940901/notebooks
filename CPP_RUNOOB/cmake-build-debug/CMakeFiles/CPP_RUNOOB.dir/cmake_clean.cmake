@@ -1,10 +1,12 @@
 file(REMOVE_RECURSE
-  "CMakeFiles/CPP_RUNOOB.dir/main.cpp.o"
-  "CMakeFiles/CPP_RUNOOB.dir/main.cpp.o.d"
-  "CMakeFiles/CPP_RUNOOB.dir/runoob.cpp.o"
-  "CMakeFiles/CPP_RUNOOB.dir/runoob.cpp.o.d"
-  "CPP_RUNOOB"
+  "CMakeFiles/CPP_RUNOOB.dir/main.cpp.obj"
+  "CMakeFiles/CPP_RUNOOB.dir/main.cpp.obj.d"
+  "CMakeFiles/CPP_RUNOOB.dir/runoob.cpp.obj"
+  "CMakeFiles/CPP_RUNOOB.dir/runoob.cpp.obj.d"
+  "CPP_RUNOOB.exe"
+  "CPP_RUNOOB.exe.manifest"
   "CPP_RUNOOB.pdb"
+  "libCPP_RUNOOB.dll.a"
 )
 
 # Per-language clean rules from dependency scanning.

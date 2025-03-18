@@ -2,7 +2,10 @@
 	"artifacts" : 
 	[
 		{
-			"path" : "CPP_RUNOOB"
+			"path" : "CPP_RUNOOB.exe"
+		},
+		{
+			"path" : "CPP_RUNOOB.pdb"
 		}
 	],
 	"backtrace" : 1,
@@ -35,7 +38,7 @@
 			"compileCommandFragments" : 
 			[
 				{
-					"fragment" : "-g -arch arm64 -isysroot /Library/Developer/CommandLineTools/SDKs/MacOSX15.2.sdk -mmacosx-version-min=14.6 -fcolor-diagnostics"
+					"fragment" : "-g -fdiagnostics-color=always"
 				},
 				{
 					"fragment" : "-std=gnu++11"
@@ -69,12 +72,16 @@
 			{
 				"fragment" : "",
 				"role" : "flags"
+			},
+			{
+				"fragment" : "-lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32",
+				"role" : "libraries"
 			}
 		],
 		"language" : "CXX"
 	},
 	"name" : "CPP_RUNOOB",
-	"nameOnDisk" : "CPP_RUNOOB",
+	"nameOnDisk" : "CPP_RUNOOB.exe",
 	"paths" : 
 	{
 		"build" : ".",
