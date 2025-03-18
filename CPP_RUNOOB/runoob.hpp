@@ -17,6 +17,7 @@
 #include "locale"
 #include "fstream"
 #include <limits>
+#include "map"
 
 using namespace std;
 
@@ -37,6 +38,8 @@ Employee getE();
 template <typename T>
 void printVector(vector<T> &vec);
 
+void func52();
+void func51();
 void func50();
 void func49();
 void func47();

@@ -5,6 +5,104 @@
 
 #include "runoob.hpp"
 
+// Map
+// 映射的增删改查
+template <typename K, typename V>
+void printMap(const map<K, V> &myMap){
+    cout << "{\n";
+    for(auto it = myMap.begin(); it != myMap.end(); ++it){
+        cout << setw(8) << it->first << " : " << it->second << endl;
+    }
+    cout << "}\n";
+}
+
+void func52(){
+    // 声明一个空字典
+    map<string, int> scores;
+    printMap(scores);
+    // 初始化字典
+    // 与Python不同的是， C++的字典默认是有顺序的
+    map<string, int> scores1 = {
+            {"Python",95},
+            {"R",100},
+            {"Linux", 75},
+            {"Report", 95}
+    };
+    printMap(scores1);
+    // 增加一个元素
+    scores1["Bio"] = 100;
+    printMap(scores1);
+    // 由于Map总是根据键的值进行排序的，所有没办法控制插入的位置
+    // 使用insert插入键值对
+    scores1.insert({"C++", 0});
+    printMap(scores1);
+    // 是哟个emplace添加元素
+    scores1.emplace("Java", 0);
+    printMap(scores1);
+    // 所以Map只有增加没有插入的说明，因为Map总是自动排序的
+
+    // 删除Map中的一个元素
+    // erase方法
+    // 根据键进行删除
+    scores1.erase("Report");
+    printMap(scores1);
+
+    // 修改Map中的一个元素
+    // 使用操作符
+    scores1["C++"] = 60;
+    printMap(scores1);
+    // 使用at方法
+    scores1.at("Java") = 60;
+    printMap(scores1);
+
+    // 查找一个元素
+    auto it = scores1.find("Java");
+    if(it != scores1.end()){
+        cout << "Found Java, " << "Value=" << scores1["Java"] << endl;
+    } else{
+        cout << "Not found Java!\n";
+    }
+    // 遍历一个映射
+    // 范围循环遍历一个映射
+    for(auto &pair: scores1){
+        cout << pair.first << "->" << pair.second << endl;
+    }
+    //使用一个迭代器来遍历一个映射
+    for(auto itr = scores1.begin(); itr != scores1.end(); ++itr){
+        cout << itr->first << " : " << itr->second << endl;
+    }
+
+}
+
+
+// 打印数组
+void printArray(const int *arr, int arr_size){
+    cout << "[";
+    for(int i = 0; i < arr_size; i++){
+        cout << left << setw(16) << *(arr + i);
+    }
+    cout << "]\n";
+}
+
+// 数组的增删改查
+void func51(){
+    // 声明一个空数组
+    // 里面是垃圾值
+    int arr[5];
+    printArray(arr, 5);
+    // 声明并初始化一个数组
+    int arr1[5] = {0};
+    printArray(arr1, 5);
+    // 数组一旦声明，大小是不能改变的，所以不存在增和删，只有改和查
+    // 使用索引查找元素
+    cout << "arr1[2]=" << arr1[2] << endl;
+    // 修改数组的元素
+    printArray(arr1, 5);
+    arr1[2] = 1318;
+    printArray(arr1, 5);
+}
+
+
 // 操作向量
 void func50(){
     /*************** 增 ******************/
