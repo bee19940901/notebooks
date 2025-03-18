@@ -21,12 +21,28 @@
 using namespace std;
 
 // 一个简单的结构体
+
+
 struct Employee{
     string name;
     unsigned short age{};
     double height{};
     double weight{};
 };
+struct Company{
+    Employee worker;
+    Employee boss;
+};
+Employee getE();
+template <typename T>
+void printVector(vector<T> &vec);
+
+void func50();
+void func49();
+void func47();
+void func48();
+void printE(Employee *e);
+void func46();
 void func45();
 void func44();
 void func43();

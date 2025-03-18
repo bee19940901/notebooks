@@ -5,6 +5,171 @@
 
 #include "runoob.hpp"
 
+// 操作向量
+void func50(){
+    /*************** 增 ******************/
+    // 初始化一个空向量
+    vector<int> vec;
+    // 往向量的末尾添加元素
+    vec.push_back(10);
+    vec.push_back(42);
+    vec.push_back(36);
+    vec.push_back(8787);
+    vec.push_back(5);
+    vec.push_back(1214);
+    vec.push_back(1892738);
+    printVector(vec);
+    // 在第三个元素前面插入元素
+    vec.insert(vec.begin() + 2, 1994);
+    printVector(vec);
+
+    /*************** 删 *****************/
+    // 弹出向量中末尾元素
+    vec.pop_back();
+    printVector(vec);
+    // 删除向量中第一个元素
+    vec.erase(vec.begin());
+    printVector(vec);
+    // 删除向量中第三个的元素
+    vec.erase(vec.begin() + 2);
+    printVector(vec);
+
+    /******************* 改 ************************/
+    // 修改向量中某个位置的元素
+    vec[2] = 2025;
+    cout << "vec.at(2)=" << vec.at(2) << endl;
+
+    /******************** 查 *************************/
+    // 使用下表访问元素
+    cout << "vec[1]=" << vec[1] << endl;
+    cout << "vec[2]=" << vec[2] << endl;
+    // 使用at访问元素
+    cout << "vec.at(1)=" << vec.at(1) << endl;
+    cout << "vec.at(2)=" << vec.at(2) << endl;
+    // 查询向量中元素的数量
+    printVector(vec);
+    size_t vec_size = vec.size();
+    cout << "Size of vec is " << vec_size << endl;
+    // 普通循环遍历向量
+    for(int i = 0; i < vec_size; i++){
+        cout << "vec[" << i <<"]=" << vec[i] << endl;
+    }
+    //范围循环遍历向量,只关心值，不是很关心索引
+    int n = 0;
+    for(int &i : vec){
+        cout << "vec[" << n <<"]=" << i << endl;
+        n++;
+    }
+    // 使用迭代器遍历向量中的元素
+    for(auto it = vec.begin(); it < vec.end(); it++){
+        cout << *it << endl;
+    }
+}
+
+// 打印一个向量
+template <typename T>
+void printVector(vector<T> &vec){
+    cout << "[";
+    for(const auto &i : vec){
+        cout << left << setw(8) << i;
+    }
+    cout << "]\n";
+}
+
+// vector
+void func49(){
+    // 默认初始化一个空的向量
+    vector<int> numbers;
+    // 打印空向量, 里面什么都没有
+    for(int &i : numbers){
+        cout << i << endl;
+    }
+    // 初始化五个元素的向量
+    vector<int> nums  = {1, 3, 5};
+    // 打印向量
+    for(int &i : nums){
+        cout << i << endl;
+    }
+    // 初始化一个包含5个默认值的向量（0）
+    vector<int> vec1(5);
+    for(int &i : vec1){
+        cout << i << endl;
+    }
+    // 初始化一个包含10个1的向量
+    vector<int> vec2(10,1);
+    for(int &i : vec2){
+        cout << i << endl;
+    }
+
+}
+
+// 嵌套结构体
+void func48(){
+    Employee lily;
+    Employee bee;
+    lily.name="Lily";
+    lily.age=28;
+    lily.height=158.0;
+    lily.weight=55.0;
+    bee.name = "Bee";
+    bee.age = 30;
+    bee.height = 173.5;
+    bee.weight = 75.0;
+    Company company;
+    company.worker=bee;
+    company.boss=lily;
+    cout
+    << "In this company, "
+    << company.boss.name
+    << " is the boss, "
+    << company.worker.name
+    << " is the worker.\n";
+}
+
+// 函数返回一个结构体
+Employee getE(){
+    static Employee e;
+    e.name="Lily";
+    e.age=28;
+    e.height=158.0;
+    e.weight=55.0;
+    return e;
+}
+
+void func47(){
+    Employee e = getE();
+    printE(&e);
+}
+
+// 结构体指针作为函数参数
+void printE(Employee *e){
+    cout
+    << "Hello, my name is "
+    << e->name
+    << ", my height is "
+    << fixed
+    << setprecision(2)
+    << e->height
+    << " cm"
+    << ", my weight is "
+    << fixed
+    << setprecision(2)
+    << e->weight
+    << " kg."
+    << endl;
+}
+
+void func46(){
+    Employee bee;
+    bee.name = "Bee";
+    bee.age = 30;
+    bee.height = 173.5;
+    bee.weight = 75.0;
+    Employee *bee_p = &bee;
+    printE(bee_p);
+}
+
+
 // 结构体引用
 void func45(){
     Employee bee;
@@ -27,7 +192,6 @@ void func45(){
             << bee_p.weight
             << " kg."
             << endl;
-
 }
 
 
