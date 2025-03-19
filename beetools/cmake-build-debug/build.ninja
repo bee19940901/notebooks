@@ -61,6 +61,12 @@ build CMakeFiles/beetools.dir/src/utils.cpp.obj: CXX_COMPILER__beetools_Debug E$
   OBJECT_DIR = CMakeFiles\beetools.dir
   OBJECT_FILE_DIR = CMakeFiles\beetools.dir\src
 
+build CMakeFiles/beetools.dir/src/MyCLI.cpp.obj: CXX_COMPILER__beetools_Debug E$:/notebooks/beetools/src/MyCLI.cpp || cmake_object_order_depends_target_beetools
+  DEP_FILE = CMakeFiles\beetools.dir\src\MyCLI.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++11
+  OBJECT_DIR = CMakeFiles\beetools.dir
+  OBJECT_FILE_DIR = CMakeFiles\beetools.dir\src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target beetools
@@ -69,7 +75,7 @@ build CMakeFiles/beetools.dir/src/utils.cpp.obj: CXX_COMPILER__beetools_Debug E$
 #############################################
 # Link the executable beetools.exe
 
-build beetools.exe: CXX_EXECUTABLE_LINKER__beetools_Debug CMakeFiles/beetools.dir/main.cpp.obj CMakeFiles/beetools.dir/src/utils.cpp.obj
+build beetools.exe: CXX_EXECUTABLE_LINKER__beetools_Debug CMakeFiles/beetools.dir/main.cpp.obj CMakeFiles/beetools.dir/src/utils.cpp.obj CMakeFiles/beetools.dir/src/MyCLI.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\beetools.dir

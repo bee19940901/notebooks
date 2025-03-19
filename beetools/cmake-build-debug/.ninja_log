@@ -1,4 +1,8 @@
 # ninja log v5
-4	1180	7640683716009361	CMakeFiles/beetools.dir/src/utils.cpp.obj	73369536f195c893
-0	3824	7640683742294716	CMakeFiles/beetools.dir/main.cpp.obj	cf4d435b0351ec55
-3825	6329	7640683767441587	beetools.exe	b2f1b58532663ec7
+5	195	7640687792097870	CMakeFiles/beetools.dir/src/utils.cpp.obj	73369536f195c893
+2	3427	7640687824295355	CMakeFiles/beetools.dir/main.cpp.obj	cf4d435b0351ec55
+3427	5448	7640687844557950	beetools.exe	b2f1b58532663ec7
+17	2818	7640700767591268	CMakeFiles/beetools.dir/src/utils.cpp.obj	73369536f195c893
+2	3186	7640700771258667	CMakeFiles/beetools.dir/main.cpp.obj	cf4d435b0351ec55
+5	3752	7640700776902420	CMakeFiles/beetools.dir/src/MyCLI.cpp.obj	dba92733b429d1ec
+3753	8749	7640700826891360	beetools.exe	269f6fde99657ed5

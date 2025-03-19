@@ -3,4 +3,4 @@ project(beetools)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(beetools main.cpp include/CLI11.hpp include/utils.hpp src/utils.cpp)
+add_executable(beetools main.cpp include/CLI11.hpp include/Utils.hpp src/utils.cpp include/MyCLI.hpp src/MyCLI.cpp)
