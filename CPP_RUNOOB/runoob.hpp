@@ -17,7 +17,9 @@
 #include "locale"
 #include "fstream"
 #include <limits>
-#include "map"
+#include <set>
+#include <map>
+#include <vector>
 
 using namespace std;
 

@@ -67,6 +67,68 @@ void printMap(const map<K, V> &myMap){
     cout << "}\n";
 }
 
+// 打印一个集合
+template<typename T>
+void printSet(const set<T> &mySet){
+    std::cout << "{ ";
+    for(auto it = mySet.begin(); it != mySet.end(); ++it){
+        std::cout << *it << " ";
+    }
+    std::cout << "}\n";
+}
+
+// 集合
+void func53(){
+    // 声明一个空集合
+    std::set<int> scores;
+    printSet(scores);
+    // 初始化一个集合
+    // 构造函数初始化
+    set<int> goals{3, 5, 6, 2, 7, 9};
+    printSet(goals);
+    // 列表初始化
+    set<int> set1 = {2, 4, 1, 7, 3, 90, 32, 254, 12};
+    printSet(set1);
+    // 集合新增元素
+    // insert
+    set1.insert(7890);
+    printSet(set1);
+    // emplace
+    set1.emplace(98870);
+    printSet(set1);
+    // 集合一次性新增多个元素
+    set1.insert({33, 66, 99});
+    printSet(set1);
+    // 集合删除一个元素
+    set1.erase(90);
+    printSet(set1);
+    // 集合一次性删除多个元素
+    // 使用迭代器批量删除元素
+    for(auto it = set1.begin(); it != set1.end();){
+        if (*it % 2 ==0){
+            it = set1.erase(it);
+        } else{
+            ++it;
+        }
+    }
+    printSet(set1);
+    // 查找符合条件的元素
+    set<int> set2;
+    for(auto &i : set1){
+        if(i %3 == 0){
+            set2.insert(i);
+        }
+    }
+    printSet(set2);
+    // 查找元素是否在集合中存在
+    auto it = set1.find(33);
+    if(it != set1.end()){
+        cout << "33 in Set" << endl;
+    } else{
+        cout << "33 not in Set" << endl;
+    }
+}
+
 void func52(){
     // 声明一个空字典
     map<string, int> scores;

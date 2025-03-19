@@ -4,6 +4,7 @@
 
 int main(int argc, char **argv) {
 
+    func53();
 //    list_1_6();
 //    list_1_5();
 //    list_1_4();
