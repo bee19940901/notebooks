@@ -1,9 +1,17 @@
 #include <iostream>
 #include "runoob.hpp"
+#include "part1.hpp"
 
-int main() {
+int main(int argc, char **argv) {
 
-    func52();
+//    list_1_6();
+//    list_1_5();
+//    list_1_4();
+//    list_1_3();
+//    list_1_2();
+//    list_1_1();
+//    func53();
+//    func52();
 //    func50();
 //    func49();
 //    func48();

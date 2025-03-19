@@ -9,6 +9,7 @@ set(CMAKE_DEPENDS_LANGUAGES
 # The set of dependency files which are needed:
 set(CMAKE_DEPENDS_DEPENDENCY_FILES
   "E:/notebooks/CPP_RUNOOB/main.cpp" "CMakeFiles/CPP_RUNOOB.dir/main.cpp.obj" "gcc" "CMakeFiles/CPP_RUNOOB.dir/main.cpp.obj.d"
+  "E:/notebooks/CPP_RUNOOB/part1.cpp" "CMakeFiles/CPP_RUNOOB.dir/part1.cpp.obj" "gcc" "CMakeFiles/CPP_RUNOOB.dir/part1.cpp.obj.d"
   "E:/notebooks/CPP_RUNOOB/runoob.cpp" "CMakeFiles/CPP_RUNOOB.dir/runoob.cpp.obj" "gcc" "CMakeFiles/CPP_RUNOOB.dir/runoob.cpp.obj.d"
   )
 

@@ -21,9 +21,23 @@
 
 using namespace std;
 
+//class Box{
+//private:
+//    double length;
+//    double width;
+//    double height;
+//public:
+//    explicit Box(double l, double w, double h);
+//    double getLength() const;
+//    double getWidth() const;
+//    double getHeight() const;
+//    double getVolume() const;
+//    void setLength(double l);
+//    void setWidth(double w);
+//    void setHeight(double h);
+//};
+
 // 一个简单的结构体
-
-
 struct Employee{
     string name;
     unsigned short age{};
@@ -38,6 +52,7 @@ Employee getE();
 template <typename T>
 void printVector(vector<T> &vec);
 
+void func53();
 void func52();
 void func51();
 void func50();

@@ -82,7 +82,16 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="E:/notebooks/CPP_RUNOOB/CLI11.hpp">
+			<Option target="CPP_RUNOOB"/>
+		</Unit>
 		<Unit filename="E:/notebooks/CPP_RUNOOB/main.cpp">
+			<Option target="CPP_RUNOOB"/>
+		</Unit>
+		<Unit filename="E:/notebooks/CPP_RUNOOB/part1.cpp">
+			<Option target="CPP_RUNOOB"/>
+		</Unit>
+		<Unit filename="E:/notebooks/CPP_RUNOOB/part1.hpp">
 			<Option target="CPP_RUNOOB"/>
 		</Unit>
 		<Unit filename="E:/notebooks/CPP_RUNOOB/runoob.cpp">

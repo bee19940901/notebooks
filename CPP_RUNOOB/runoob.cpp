@@ -5,6 +5,57 @@
 
 #include "runoob.hpp"
 
+//Box::Box(double l, double w, double h) : length(l), width(w), height(h) {}
+//
+//
+//// 类和对象
+//double Box::getVolume() const {
+//    return length * width * height;
+//}
+//
+//double Box::getHeight() const {
+//    return height;
+//}
+//
+//double Box::getWidth() const {
+//    return width;
+//}
+//
+//double Box::getLength() const {
+//    return length;
+//}
+//
+//void Box::setLength(double l) {
+//    this->length = l;
+//}
+//
+//void Box::setWidth(double w) {
+//    this->width = w;
+//}
+//
+//void Box::setHeight(double h) {
+//    this->height = h;
+//
+//}
+//
+//
+//void func53(){
+//    Box box(3, 2, 1);
+//    cout
+//    << "Length of the box is " << box.getLength() << ", "
+//    << "width of the box is " << box.getWidth() << ", "
+//    << "height of the box is " << box.getHeight() << ", "
+//    << "volume of the box is " << box.getVolume() << ".\n";
+//    box.setLength(3.5);
+//    box.setWidth(2.7);
+//    box.setHeight(8.9);
+//    cout
+//    << "Length of the box is " << box.getLength() << ", "
+//    << "width of the box is " << box.getWidth() << ", "
+//    << "height of the box is " << box.getHeight() << ", "
+//    << "volume of the box is " << box.getVolume() << ".\n";
+//}
+
 // Map
 // 映射的增删改查
 template <typename K, typename V>

@@ -152,6 +152,30 @@ main.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPP_RUNOOB.dir\build.make CMakeFiles/CPP_RUNOOB.dir/main.cpp.s
 .PHONY : main.cpp.s
 
+part1.obj: part1.cpp.obj
+.PHONY : part1.obj
+
+# target to build an object file
+part1.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPP_RUNOOB.dir\build.make CMakeFiles/CPP_RUNOOB.dir/part1.cpp.obj
+.PHONY : part1.cpp.obj
+
+part1.i: part1.cpp.i
+.PHONY : part1.i
+
+# target to preprocess a source file
+part1.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPP_RUNOOB.dir\build.make CMakeFiles/CPP_RUNOOB.dir/part1.cpp.i
+.PHONY : part1.cpp.i
+
+part1.s: part1.cpp.s
+.PHONY : part1.s
+
+# target to generate assembly for a file
+part1.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPP_RUNOOB.dir\build.make CMakeFiles/CPP_RUNOOB.dir/part1.cpp.s
+.PHONY : part1.cpp.s
+
 runoob.obj: runoob.cpp.obj
 .PHONY : runoob.obj
 
@@ -188,6 +212,9 @@ help:
 	@echo ... main.obj
 	@echo ... main.i
 	@echo ... main.s
+	@echo ... part1.obj
+	@echo ... part1.i
+	@echo ... part1.s
 	@echo ... runoob.obj
 	@echo ... runoob.i
 	@echo ... runoob.s
