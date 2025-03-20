@@ -7,6 +7,59 @@
 
 #include "iostream"
 
+// 类的继承
+class Shape{
+public:
+    Shape(double l, double w);
+    virtual ~Shape()=default;
+    double getLength();
+    double getWidth();
+protected:
+    double length;
+    double width;
+};
+
+class RectAngle : public Shape{
+public:
+    RectAngle(double l, double w);
+    double getArea();
+};
+
+class PrintData{
+public:
+    static void print(const int& i);
+    static void print(const double& d);
+    static void print(const std::string& s);
+};
+
+class Person{
+public:
+    Person();
+    explicit Person(const std::string& name);
+    explicit Person(int age);
+    Person(const std::string& name, int age);
+    virtual void print ();
+protected:
+    std::string name;
+    int age;
+};
+
+class Student : public Person{
+public:
+    Student(const std::string& name, int age, double score);
+    void print() override;
+protected:
+    double score;
+};
+
+
+// 类的继承
+void list_1_10();
+// 构造函数重载
+void list_1_9();
+// 函数重载
+void list_1_8();
+void list_1_7();
 // 委托构造函数
 void list_1_6();
 //默认是浅拷贝构造

@@ -129,3 +129,88 @@ Box2::Box2(double l, double w, double h) {
 //    std::cout << "The length of the box is " << box2.length << std::endl;
 //    std::cout << "The length of the box is " << box2.getLength() << std::endl;
 //}
+Shape::Shape(double l, double w) {
+    length = l;
+    width = w;
+}
+
+double Shape::getLength() {
+    return length;
+}
+
+double Shape::getWidth() {
+    return width;
+}
+
+double RectAngle::getArea() {
+    return length * width;
+}
+
+RectAngle::RectAngle(double l, double w) : Shape(l, w) {
+}
+
+void list_1_7(){
+    RectAngle rect(3.1415, 4.1413);
+    std::cout << "Length of Rect is " << rect.getLength() << ".\n";
+    std::cout << "Width of Rect is " << rect.getWidth() << ".\n";
+    std::cout << "Area of Rect is " << rect.getArea() << ".\n";
+}
+
+
+void PrintData::print(const int& i) {
+    std::cout << "Int is " << i << ".\n";
+}
+
+void PrintData::print(const double& d) {
+    std::cout << "Double is " << d << ".\n";
+}
+
+void PrintData::print(const std::string& s) {
+    std::cout << "String is " << s << ".\n";
+}
+
+void list_1_8(){
+    PrintData::print(1);
+    PrintData::print(3.14);
+    PrintData::print("Hello, Bee!");
+}
+
+Person::Person() : Person("Unknown", 0){}
+
+Person::Person(const std::string& name): Person(name, 0) {}
+
+Person::Person(int age): Person("Unknown", age) {}
+
+Person::Person(const std::string& name, int age){
+    this->name = name;
+    this->age = age;
+}
+
+
+void Person::print(){
+    std::cout << "Hello, my name is " << name << ", I'm " << age << " years old.\n";
+}
+
+void list_1_9(){
+    Person().print();
+    Person(32).print();
+    Person("Bee").print();
+    Person("Lily", 28).print();
+}
+
+
+Student::Student(const std::string& name, int age, double score) : Person(name, age) {
+    this->score = score;
+}
+
+void Student::print() {
+    std::cout << "Hello, my name is " << name << ", I'm " << age << " years old, my score is" << score << ".\n";
+}
+
+void list_1_10(){
+    Person().print();
+    Person(32).print();
+    Person("Bee").print();
+    Person("Lily", 28).print();
+    Student("Alison", 35, 95).print();
+}
