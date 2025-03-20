@@ -4,7 +4,8 @@
 
 int main(int argc, char **argv) {
 
-    list_1_10();
+    test_1_1();
+//    list_1_10();
 //    list_1_9();
 //    list_1_8();
 //    list_1_7();

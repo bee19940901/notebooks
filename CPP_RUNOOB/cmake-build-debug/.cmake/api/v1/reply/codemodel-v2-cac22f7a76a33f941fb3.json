@@ -39,7 +39,7 @@
 				{
 					"directoryIndex" : 0,
 					"id" : "CPP_RUNOOB::@6890427a1f51a3e7e1df",
-					"jsonFile" : "target-CPP_RUNOOB-Debug-ef3b18157a923a8080b8.json",
+					"jsonFile" : "target-CPP_RUNOOB-Debug-92e1fffcb82e0ea1f21f.json",
 					"name" : "CPP_RUNOOB",
 					"projectIndex" : 0
 				}
@@ -49,12 +49,12 @@
 	"kind" : "codemodel",
 	"paths" : 
 	{
-		"build" : "E:/notebooks/CPP_RUNOOB/cmake-build-debug",
-		"source" : "E:/notebooks/CPP_RUNOOB"
+		"build" : "D:/Workspace/notebooks/CPP_RUNOOB/cmake-build-debug",
+		"source" : "D:/Workspace/notebooks/CPP_RUNOOB"
 	},
 	"version" : 
 	{
 		"major" : 2,
-		"minor" : 4
+		"minor" : 7
 	}
 }
