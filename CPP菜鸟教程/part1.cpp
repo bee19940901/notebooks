@@ -215,52 +215,52 @@
 //    Student("Alison", 35, 95).print();
 //}
 
-Animal::Animal(const std::string &n) {
-    name = n;
-}
-
-Animal::~Animal() {
-    std::cout << "Animal destroyed.\n";
-}
-
-void Animal::hello() {
-    std::cout << "Hello, my name is " << name << ", I am an animal.\n";
-}
-
-
-Dog::Dog(const std::string &n) : Animal(n) {}
-
-Dog::~Dog() {
-    std::cout << "Dog destroyed.\n";
-}
-
-void Dog::hello() {
-    std::cout << "Hello, my name is " << name << ", I am a dog.\n";
-}
-
-
-Cat::Cat(const std::string &n) : Animal(n) {
-
-}
-
-Cat::~Cat() {
-    std::cout << "Cat destroyed.\n";
-}
-
-void Cat::hello() {
-    std::cout << "Hello, my name is " << name << ", I am a cat.\n";
-}
-
-void test_1_1(){
-//    Animal *animal_p = new Dog("Bee");
-//    animal_p->hello();
-//    delete animal_p;
+//Animal::Animal(const std::string &n) {
+//    name = n;
+//}
 //
-//    animal_p = new Cat("Lily");
+//Animal::~Animal() {
+//    std::cout << "Animal destroyed.\n";
+//}
+//
+//void Animal::hello() {
+//    std::cout << "Hello, my name is " << name << ", I am an animal.\n";
+//}
+//
+//
+//Dog::Dog(const std::string &n) : Animal(n) {}
+//
+//Dog::~Dog() {
+//    std::cout << "Dog destroyed.\n";
+//}
+//
+//void Dog::hello() {
+//    std::cout << "Hello, my name is " << name << ", I am a dog.\n";
+//}
+//
+//
+//Cat::Cat(const std::string &n) : Animal(n) {
+//
+//}
+//
+//Cat::~Cat() {
+//    std::cout << "Cat destroyed.\n";
+//}
+//
+//void Cat::hello() {
+//    std::cout << "Hello, my name is " << name << ", I am a cat.\n";
+//}
+//
+//void test_1_1(){
+////    Animal *animal_p = new Dog("Bee");
+////    animal_p->hello();
+////    delete animal_p;
+////
+////    animal_p = new Cat("Lily");
+////    animal_p->hello();
+////    delete animal_p;
+//    std::unique_ptr<Animal> animal_p = std::make_unique<Dog>("Bee");
+//    animal_p->hello(); // 动态绑定到 Dog 的 hello方法
+//    animal_p = std::make_unique<Cat>("Lily");
 //    animal_p->hello();
-//    delete animal_p;
-    std::unique_ptr<Animal> animal_p = std::make_unique<Dog>("Bee");
-    animal_p->hello();
-    animal_p = std::make_unique<Cat>("Lily");
-    animal_p->hello();
-}
+//}

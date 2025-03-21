@@ -3,4 +3,4 @@ project(CPP)
 
 set(CMAKE_CXX_STANDARD 20)
 
-add_executable(CPP main.cpp part1.cpp)
+add_executable(CPP main.cpp part1.cpp runoob.cpp runoob.cpp Chapter1.cpp Chapter1.hpp Chapter2.cpp Chapter2.hpp test1.cpp test1.hpp)

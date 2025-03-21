@@ -9,32 +9,32 @@
 #include <memory>
 
 // 多态
-void test_1_1();
+//void test_1_1();
+//
+//class Animal{
+//protected:
+//    std::string name;
+//public:
+//    explicit Animal(const std::string &n);
+//    virtual ~Animal();
+//    virtual void hello();
+//};
+//
+//class Dog: public Animal{
+//public:
+//    explicit Dog(const std::string &n);
+//    ~Dog() override;
+//    void hello() override;
+//};
+//
+//class Cat: public Animal{
+//public:
+//    explicit Cat(const std::string &n);
+//    ~Cat() override;
+//    void hello() override;
+//};
 
-class Animal{
-protected:
-    std::string name;
-public:
-    explicit Animal(const std::string &n);
-    virtual ~Animal();
-    virtual void hello();
-};
-
-class Dog: public Animal{
-public:
-    explicit Dog(const std::string &n);
-    ~Dog() override;
-    void hello() override;
-};
-
-class Cat: public Animal{
-public:
-    explicit Cat(const std::string &n);
-    ~Cat() override;
-    void hello() override;
-};
-
-//// 类的继承
+// 类的继承
 //class Shape{
 //public:
 //    Shape(double l, double w);
@@ -80,18 +80,18 @@ public:
 //};
 //
 //
-//// 类的继承
+// 类的继承
 //void list_1_10();
-//// 构造函数重载
+// 构造函数重载
 //void list_1_9();
-//// 函数重载
+// 函数重载
 //void list_1_8();
 //void list_1_7();
-//// 委托构造函数
+// 委托构造函数
 //void list_1_6();
-////默认是浅拷贝构造
+//默认是浅拷贝构造
 //void list_1_5();
-//// 深拷贝构造
+// 深拷贝构造
 //void list_1_4();
 //void list_1_3();
 //void list_1_2();
