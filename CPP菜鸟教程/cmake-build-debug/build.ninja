@@ -103,6 +103,12 @@ build CMakeFiles/CPP.dir/test3.cpp.obj: CXX_COMPILER__CPP_Debug E$:/notebooks/CP
   OBJECT_DIR = CMakeFiles\CPP.dir
   OBJECT_FILE_DIR = CMakeFiles\CPP.dir
 
+build CMakeFiles/CPP.dir/test4.cpp.obj: CXX_COMPILER__CPP_Debug E$:/notebooks/CPP²ËÄñ½Ì³Ì/test4.cpp || cmake_object_order_depends_target_CPP
+  DEP_FILE = CMakeFiles\CPP.dir\test4.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
+  OBJECT_DIR = CMakeFiles\CPP.dir
+  OBJECT_FILE_DIR = CMakeFiles\CPP.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target CPP
@@ -111,7 +117,7 @@ build CMakeFiles/CPP.dir/test3.cpp.obj: CXX_COMPILER__CPP_Debug E$:/notebooks/CP
 #############################################
 # Link the executable CPP.exe
 
-build CPP.exe: CXX_EXECUTABLE_LINKER__CPP_Debug CMakeFiles/CPP.dir/main.cpp.obj CMakeFiles/CPP.dir/part1.cpp.obj CMakeFiles/CPP.dir/runoob.cpp.obj CMakeFiles/CPP.dir/Chapter1.cpp.obj CMakeFiles/CPP.dir/Chapter2.cpp.obj CMakeFiles/CPP.dir/test1.cpp.obj CMakeFiles/CPP.dir/Fastq.cpp.obj CMakeFiles/CPP.dir/test2.cpp.obj CMakeFiles/CPP.dir/test3.cpp.obj
+build CPP.exe: CXX_EXECUTABLE_LINKER__CPP_Debug CMakeFiles/CPP.dir/main.cpp.obj CMakeFiles/CPP.dir/part1.cpp.obj CMakeFiles/CPP.dir/runoob.cpp.obj CMakeFiles/CPP.dir/Chapter1.cpp.obj CMakeFiles/CPP.dir/Chapter2.cpp.obj CMakeFiles/CPP.dir/test1.cpp.obj CMakeFiles/CPP.dir/Fastq.cpp.obj CMakeFiles/CPP.dir/test2.cpp.obj CMakeFiles/CPP.dir/test3.cpp.obj CMakeFiles/CPP.dir/test4.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\CPP.dir
