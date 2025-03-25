@@ -6,9 +6,14 @@
 
 void test1(){
     // 输入内容
-    std::string data;
+    std::vector<std::string> content = {
+            "Hello, my name is Bee.",
+            "I am 30 years old.",
+            "I am 173.5cm tall.",
+            "my weight is 75.0kg."
+    };
     // 输出文件
-    std::string outFile = "../test1.out.txt";
+    std::string outFile = "../test/out.txt";
     // 输出文件绝对路径
     std::filesystem::path outPath = std::filesystem::absolute(outFile);
     // 输出目录
@@ -25,15 +30,13 @@ void test1(){
         }
     }
     // 打开文件
-    std::ofstream oufile(outPath, std::ios::out);
-
-    outfile.open("../test1.txt");
-    std::cout << "Write something to the file:\n";
-    std::cin >> data;
-    if(!outfile){
+    std::ofstream fw(outPath, std::ios::out);
+    if(!fw){
         std::cerr << "Error: Cannot open file!\n";
-        exit(1);
+        return;
     }
-    outfile << data;
-    outfile.close();
+    for(const auto &line: content){
+        fw << line << std::endl;
+    }
+    fw.close();
 }

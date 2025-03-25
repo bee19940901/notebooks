@@ -1,0 +1,4 @@
+Hello, my name is Bee.
+I am 30 years old.
+I am 173.5cm tall.
+my weight is 75.0kg.
