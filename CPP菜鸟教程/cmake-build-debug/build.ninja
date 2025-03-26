@@ -109,6 +109,42 @@ build CMakeFiles/CPP.dir/test4.cpp.obj: CXX_COMPILER__CPP_Debug E$:/notebooks/CP
   OBJECT_DIR = CMakeFiles\CPP.dir
   OBJECT_FILE_DIR = CMakeFiles\CPP.dir
 
+build CMakeFiles/CPP.dir/test5.cpp.obj: CXX_COMPILER__CPP_Debug E$:/notebooks/CPP菜鸟教程/test5.cpp || cmake_object_order_depends_target_CPP
+  DEP_FILE = CMakeFiles\CPP.dir\test5.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
+  OBJECT_DIR = CMakeFiles\CPP.dir
+  OBJECT_FILE_DIR = CMakeFiles\CPP.dir
+
+build CMakeFiles/CPP.dir/test6.cpp.obj: CXX_COMPILER__CPP_Debug E$:/notebooks/CPP菜鸟教程/test6.cpp || cmake_object_order_depends_target_CPP
+  DEP_FILE = CMakeFiles\CPP.dir\test6.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
+  OBJECT_DIR = CMakeFiles\CPP.dir
+  OBJECT_FILE_DIR = CMakeFiles\CPP.dir
+
+build CMakeFiles/CPP.dir/test7.cpp.obj: CXX_COMPILER__CPP_Debug E$:/notebooks/CPP菜鸟教程/test7.cpp || cmake_object_order_depends_target_CPP
+  DEP_FILE = CMakeFiles\CPP.dir\test7.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
+  OBJECT_DIR = CMakeFiles\CPP.dir
+  OBJECT_FILE_DIR = CMakeFiles\CPP.dir
+
+build CMakeFiles/CPP.dir/test8.cpp.obj: CXX_COMPILER__CPP_Debug E$:/notebooks/CPP菜鸟教程/test8.cpp || cmake_object_order_depends_target_CPP
+  DEP_FILE = CMakeFiles\CPP.dir\test8.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
+  OBJECT_DIR = CMakeFiles\CPP.dir
+  OBJECT_FILE_DIR = CMakeFiles\CPP.dir
+
+build CMakeFiles/CPP.dir/test9.cpp.obj: CXX_COMPILER__CPP_Debug E$:/notebooks/CPP菜鸟教程/test9.cpp || cmake_object_order_depends_target_CPP
+  DEP_FILE = CMakeFiles\CPP.dir\test9.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
+  OBJECT_DIR = CMakeFiles\CPP.dir
+  OBJECT_FILE_DIR = CMakeFiles\CPP.dir
+
+build CMakeFiles/CPP.dir/test10.cpp.obj: CXX_COMPILER__CPP_Debug E$:/notebooks/CPP菜鸟教程/test10.cpp || cmake_object_order_depends_target_CPP
+  DEP_FILE = CMakeFiles\CPP.dir\test10.cpp.obj.d
+  FLAGS = -g -fdiagnostics-color=always -std=gnu++20
+  OBJECT_DIR = CMakeFiles\CPP.dir
+  OBJECT_FILE_DIR = CMakeFiles\CPP.dir
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target CPP
@@ -117,7 +153,7 @@ build CMakeFiles/CPP.dir/test4.cpp.obj: CXX_COMPILER__CPP_Debug E$:/notebooks/CP
 #############################################
 # Link the executable CPP.exe
 
-build CPP.exe: CXX_EXECUTABLE_LINKER__CPP_Debug CMakeFiles/CPP.dir/main.cpp.obj CMakeFiles/CPP.dir/part1.cpp.obj CMakeFiles/CPP.dir/runoob.cpp.obj CMakeFiles/CPP.dir/Chapter1.cpp.obj CMakeFiles/CPP.dir/Chapter2.cpp.obj CMakeFiles/CPP.dir/test1.cpp.obj CMakeFiles/CPP.dir/Fastq.cpp.obj CMakeFiles/CPP.dir/test2.cpp.obj CMakeFiles/CPP.dir/test3.cpp.obj CMakeFiles/CPP.dir/test4.cpp.obj
+build CPP.exe: CXX_EXECUTABLE_LINKER__CPP_Debug CMakeFiles/CPP.dir/main.cpp.obj CMakeFiles/CPP.dir/part1.cpp.obj CMakeFiles/CPP.dir/runoob.cpp.obj CMakeFiles/CPP.dir/Chapter1.cpp.obj CMakeFiles/CPP.dir/Chapter2.cpp.obj CMakeFiles/CPP.dir/test1.cpp.obj CMakeFiles/CPP.dir/Fastq.cpp.obj CMakeFiles/CPP.dir/test2.cpp.obj CMakeFiles/CPP.dir/test3.cpp.obj CMakeFiles/CPP.dir/test4.cpp.obj CMakeFiles/CPP.dir/test5.cpp.obj CMakeFiles/CPP.dir/test6.cpp.obj CMakeFiles/CPP.dir/test7.cpp.obj CMakeFiles/CPP.dir/test8.cpp.obj CMakeFiles/CPP.dir/test9.cpp.obj CMakeFiles/CPP.dir/test10.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\CPP.dir
