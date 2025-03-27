@@ -1,3 +1,0 @@
-"D:\Program Files\JetBrains\CLion 2023.1.3\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\CPPSTL.dir/objects.a
-D:\PROGRA~2\JETBRA~1\CLION2~1.3\bin\mingw\bin\ar.exe qc CMakeFiles\CPPSTL.dir/objects.a @CMakeFiles\CPPSTL.dir\objects1
-D:\PROGRA~2\JETBRA~1\CLION2~1.3\bin\mingw\bin\G__~1.EXE -g -Wl,--whole-archive CMakeFiles\CPPSTL.dir/objects.a -Wl,--no-whole-archive -o CPPSTL.exe -Wl,--out-implib,libCPPSTL.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\CPPSTL.dir\linkLibs.rsp

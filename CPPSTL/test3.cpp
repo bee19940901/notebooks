@@ -4,6 +4,7 @@
 
 #include <iostream>
 #include <list>
+#include <algorithm>
 
 template <typename T>
 void printList(const std::list<T> &l) {
@@ -123,6 +124,20 @@ int main() {
     for(int &n : l4){
         n *= 2;
     }
+
+    // 删除等于某值的元素
+    l4.remove(22);
+
+    // 删除满足某条件的所有元素
+    l4.remove_if([](int x){ return x > 100;});
+
+    // 将所有负数转换为正数
+    std::for_each(l4.begin(), l4.end(),[](int &x){
+        if(x < 0){
+            x *= -1;
+        }
+    });
+
 
     printList(l4);
     return 0;
