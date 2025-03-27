@@ -4,4 +4,4 @@ project(CPPSTL)
 set(CMAKE_CXX_STANDARD 23)
 
 add_executable(CPPSTL main.cpp
-        test1.cpp test2.cpp test2.cpp)
+        test1.cpp test2.cpp test2.cpp test3.cpp)

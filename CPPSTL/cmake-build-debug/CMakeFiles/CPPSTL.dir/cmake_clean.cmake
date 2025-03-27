@@ -5,6 +5,8 @@ file(REMOVE_RECURSE
   "CMakeFiles/CPPSTL.dir/test1.cpp.obj.d"
   "CMakeFiles/CPPSTL.dir/test2.cpp.obj"
   "CMakeFiles/CPPSTL.dir/test2.cpp.obj.d"
+  "CMakeFiles/CPPSTL.dir/test3.cpp.obj"
+  "CMakeFiles/CPPSTL.dir/test3.cpp.obj.d"
   "CPPSTL.exe"
   "CPPSTL.exe.manifest"
   "CPPSTL.pdb"

@@ -91,6 +91,9 @@
 		<Unit filename="E:/notebooks/CPPSTL/test2.cpp">
 			<Option target="CPPSTL"/>
 		</Unit>
+		<Unit filename="E:/notebooks/CPPSTL/test3.cpp">
+			<Option target="CPPSTL"/>
+		</Unit>
 		<Unit filename="E:/notebooks/CPPSTL/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>

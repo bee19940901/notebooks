@@ -200,6 +200,30 @@ test2.cpp.s:
 	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPSTL.dir\build.make CMakeFiles/CPPSTL.dir/test2.cpp.s
 .PHONY : test2.cpp.s
 
+test3.obj: test3.cpp.obj
+.PHONY : test3.obj
+
+# target to build an object file
+test3.cpp.obj:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPSTL.dir\build.make CMakeFiles/CPPSTL.dir/test3.cpp.obj
+.PHONY : test3.cpp.obj
+
+test3.i: test3.cpp.i
+.PHONY : test3.i
+
+# target to preprocess a source file
+test3.cpp.i:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPSTL.dir\build.make CMakeFiles/CPPSTL.dir/test3.cpp.i
+.PHONY : test3.cpp.i
+
+test3.s: test3.cpp.s
+.PHONY : test3.s
+
+# target to generate assembly for a file
+test3.cpp.s:
+	$(MAKE) $(MAKESILENT) -f CMakeFiles\CPPSTL.dir\build.make CMakeFiles/CPPSTL.dir/test3.cpp.s
+.PHONY : test3.cpp.s
+
 # Help Target
 help:
 	@echo The following are some of the valid targets for this Makefile:
@@ -218,6 +242,9 @@ help:
 	@echo ... test2.obj
 	@echo ... test2.i
 	@echo ... test2.s
+	@echo ... test3.obj
+	@echo ... test3.i
+	@echo ... test3.s
 .PHONY : help
 
 
