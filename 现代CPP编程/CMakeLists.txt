@@ -8,6 +8,8 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 add_executable(CPP
         src/chapter1_3.cpp
         src/main.cpp
+        include/chapter1_4.hpp
+        src/chapter1_4.cpp
 )
 
 # 添加 include 目录（放在 add_executable 之后）

@@ -1,11 +1,11 @@
 //
-// Author: Bing Liang <bing@example.com>
+// Author: Bing Liang
 // Email : believer19940901@gmail.com
 // Date  : 2025/8/27 17:38
 //
 //
-#include "chapter1_3.hpp"
 #include <iostream>
+#include "chapter1_3.hpp"
 
 void chapter1_3() {
     // 常量初始化
